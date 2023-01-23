@@ -372,6 +372,7 @@ void InitFloorplan::makeRows(dbSite* site,
     y += site_dy;
   }
   logger_->info(IFP, 1, "Added {} rows of {} sites.", rows_y, rows_x);
+  logger_->warn(IFP, 42, "Derek was here!"); // A test message
 }
 
 dbSite* InitFloorplan::findSite(const char* site_name)
